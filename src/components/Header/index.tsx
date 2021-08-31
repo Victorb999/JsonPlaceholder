@@ -13,6 +13,16 @@ export default function Header() {
             <h2>Posts</h2>
           </Link>
         </li>
+        <li>
+          <Link to="/todos">
+            <h2>To-Do</h2>
+          </Link>
+        </li>
+        <li>
+          <Link to="/albums">
+            <h2>Albums</h2>
+          </Link>
+        </li>
       </ul>
     </header>
   );

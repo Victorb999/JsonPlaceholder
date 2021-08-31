@@ -69,3 +69,34 @@ h2 {
 button {
   cursor: pointer;
 }
+.container {
+  padding: 1rem;
+  h1{
+    margin-bottom: 0.5rem;
+  }
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 0.5rem;
+}
+@media (max-width: 1000px) {
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    &:first-child{
+      padding: 0.5rem;
+    }
+  }
+}
+@media (max-width: 600px) {
+  .albumGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.3rem;
+    &:first-child{
+      padding: 0.3rem;
+    }
+  }
+}
