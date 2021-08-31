@@ -1,0 +1,40 @@
+.postsContainer {
+  padding: 1rem;
+  h1{
+    margin-bottom: 0.5rem;
+  }
+}
+.postsGrid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 0.5rem;
+}
+.post{
+  background-color: var(--primary);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  h1{
+    color: var(--secondary);
+    margin-bottom: 0.5rem;
+  }
+}
+@media (max-width: 1000px) {
+  .postsGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5rem;
+  }
+  .post {
+    padding: 0.5rem;
+  }
+}
+@media (max-width: 600px) {
+  .postsGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+  }
+  .post {
+    padding: 0.5rem;
+  }
+}
