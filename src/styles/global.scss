@@ -75,6 +75,14 @@ button {
     margin-bottom: 0.5rem;
   }
 }
+.wait{
+  margin: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font: 2rem bold;  
+  font-family: "Josefin Sans", sans-serif;
+}
 
 .grid {
   display: grid;
@@ -90,11 +98,17 @@ button {
     }
   }
 }
-@media (max-width: 600px) {
-  .albumGrid {
+@media (max-width: 400px) {
+  .grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 0.3rem;
+    h1{
+      font-size: 1.6rem;
+    }
+    h2{
+      font-size: 1.2rem;
+    }
     &:first-child{
       padding: 0.3rem;
     }

@@ -15,7 +15,7 @@ export default function Header() {
         </li>
         <li>
           <Link to="/todos">
-            <h2>To-Do</h2>
+            <h2>ToDos</h2>
           </Link>
         </li>
         <li>
