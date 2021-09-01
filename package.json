@@ -2,13 +2,11 @@
   "name": "react-typescript",
   "version": "1.0.0",
   "description": "React and TypeScript example starter project",
-  "keywords": [
-    "typescript",
-    "react",
-    "starter"
-  ],
+  "keywords": ["typescript", "react", "starter"],
   "main": "src/index.tsx",
   "dependencies": {
+    "@testing-library/jest-dom": "5.14.1",
+    "@testing-library/react": "12.0.0",
     "axios": "0.21.1",
     "react": "17.0.2",
     "react-dom": "17.0.2",
@@ -26,10 +24,8 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
-  "browserslist": [
-    ">0.2%",
-    "not dead",
-    "not ie <= 11",
-    "not op_mini all"
-  ]
+  "jest": {
+    "setupFilesAfterEnv": ["<rootDir>/jest-setup.js"]
+  },
+  "browserslist": [">0.2%", "not dead", "not ie <= 11", "not op_mini all"]
 }
