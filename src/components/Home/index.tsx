@@ -1,5 +1,4 @@
 import styles from "./styles.module.scss";
-import { BrowserRouter as Router, Link } from "react-router-dom";
 
 function Home() {
   return (
