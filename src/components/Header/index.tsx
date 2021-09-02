@@ -1,5 +1,6 @@
 import styles from "./styles.module.scss";
 import { Link } from "react-router-dom";
+import ThemeSelector from "../ThemeSelector";
 
 export default function Header() {
   return (
@@ -23,6 +24,7 @@ export default function Header() {
             <h2>Albums</h2>
           </Link>
         </li>
+        <ThemeSelector />
       </ul>
     </header>
   );

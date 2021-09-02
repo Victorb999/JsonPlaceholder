@@ -1,0 +1,47 @@
+.themeSelector{
+  position: absolute;
+  top: 10%;
+  right: 10%;
+}
+.tagget {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
+  padding: var(--size-3);
+  padding-bottom: 0;
+}
+.tagget .checkbox {
+  opacity: 0;
+  position: absolute;
+}
+.checkbox:checked + .label .ball {
+  transform: translateX(-24px);
+}
+.tagget .label {
+  background-color: var(--gray-6);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 50px;
+  position: relative;
+  padding: 6px;
+  height: 32px;
+  border: 3px solid;
+  width: 56px;
+}
+.tagget .label .ball {
+  background-color: var(--white);
+  border-radius: 50%;
+  position: absolute;
+  top: 2px;
+  left: 27px;
+  height: 22px;
+  width: 22px;
+  transition: transform 0.2s linear;
+}
+.tagget .label .moon {
+  margin: 0;
+}
+.tagget .label .sun {
+  margin: 0;
+}

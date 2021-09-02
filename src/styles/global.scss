@@ -39,9 +39,6 @@
   }
 }
 
-body {
-  background-color: var(--gray-1);
-}
 
 body,
 input,
@@ -88,6 +85,24 @@ button {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   gap: 0.5rem;
+}
+
+.light{
+  background-color: var(--gray-1);
+}
+.dark {
+  background-color: var(--gray-5);
+  color: var(--gray-1);
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h5 {
+    font-weight: 600;
+    font-family: "Josefin Sans", sans-serif;
+    color: var(--gray-1);
+  }
 }
 @media (max-width: 1000px) {
   .grid {

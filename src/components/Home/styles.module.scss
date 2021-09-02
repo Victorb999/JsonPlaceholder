@@ -1,6 +1,6 @@
 .home{
   display: flex;
-  background-color: var(--gray-1);
+  //background-color: var(--gray-1);
   min-height: 90vh;
   align-items: center;
   text-align: center;
@@ -44,6 +44,7 @@
     }
   }
 }
+
 @media (max-width: 400px) {
   .home{
     ul{

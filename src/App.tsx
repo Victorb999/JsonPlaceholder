@@ -1,13 +1,11 @@
-import Router from "./router/Router";
+import Main from "./main";
 import "./styles/global.scss";
-import styles from "./styles/app.module.scss";
+import { ThemeContextProvider } from "./context/ThemeContext";
 
 export default function App() {
   return (
-    <div className={styles.wrapper}>
-      <main>
-        <Router />
-      </main>
-    </div>
+    <ThemeContextProvider>
+      <Main />
+    </ThemeContextProvider>
   );
 }
