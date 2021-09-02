@@ -10,14 +10,10 @@ describe("Albums", () => {
     expect(text).toBeInTheDocument();
   });
 
-  // test("should render 100 albums", async () => {
-  //   act(() => {
-  //     render(<Albums />);
-  //   });
+  test("should render 100 albums", async () => {
+    render(<Albums />);
+    const text = await screen.findAllByText(/Album #/i);
 
-  //   const text = screen.getAllByText(/album/i);
-
-  //   console.log(text.length);
-  //   expect(text.length).toEqual(100);
-  // });
+    expect(text.length).toEqual(100);
+  });
 });

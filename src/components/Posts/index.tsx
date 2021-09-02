@@ -13,10 +13,8 @@ function Posts() {
   const [posts, setPost] = useState<Post[]>([] as Post[]);
   useEffect(() => {
     async function getPost() {
-      const res = await api.get("posts").then((response) => {
-        return response.data;
-      });
-      setPost(res);
+      const res = await api.get("posts");
+      setPost(res.data);
     }
     getPost();
   }, []);

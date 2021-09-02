@@ -1,4 +1,5 @@
 import styles from "./styles.module.scss";
+import { Link } from "react-router-dom";
 
 function Home() {
   return (
@@ -7,19 +8,19 @@ function Home() {
       <p>Click to see posts, todos or albums</p>
       <ul>
         <li>
-          <a href="/posts">
+          <Link to="/posts">
             <h2>Posts</h2>
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="/todos">
+          <Link to="/todos">
             <h2>ToDos</h2>
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="/albums">
+          <Link to="/albums">
             <h2>Albums</h2>
-          </a>
+          </Link>
         </li>
       </ul>
     </div>

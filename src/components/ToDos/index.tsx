@@ -13,10 +13,8 @@ function ToDos() {
   const [todos, setTodo] = useState<Todo[]>([] as Todo[]);
   useEffect(() => {
     async function getTodo() {
-      const res = await api.get("todos").then((response) => {
-        return response.data;
-      });
-      setTodo(res);
+      const res = await api.get("todos");
+      setTodo(res.data);
     }
     getTodo();
   }, []);
