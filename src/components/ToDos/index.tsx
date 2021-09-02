@@ -11,11 +11,12 @@ type Todo = {
 
 function ToDos() {
   const [todos, setTodo] = useState<Todo[]>([] as Todo[]);
+
+  const getTodo = async () => {
+    const res = await api.get("todos");
+    setTodo(res.data);
+  };
   useEffect(() => {
-    async function getTodo() {
-      const res = await api.get("todos");
-      setTodo(res.data);
-    }
     getTodo();
   }, []);
 

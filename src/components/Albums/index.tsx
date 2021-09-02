@@ -11,11 +11,12 @@ type Album = {
 function Albums() {
   const [albums, setAlbum] = useState<Album[]>([] as Album[]);
 
+  const getAlbum = async () => {
+    const res = await api.get("albums");
+    setAlbum(res.data);
+  };
+
   useEffect(() => {
-    async function getAlbum() {
-      const res = await api.get("albums");
-      setAlbum(res.data);
-    }
     getAlbum();
   }, []);
 

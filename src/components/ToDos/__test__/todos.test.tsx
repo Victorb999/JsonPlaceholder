@@ -9,4 +9,10 @@ describe("Todos", () => {
 
     expect(text).toBeInTheDocument();
   });
+  test("should render 200 todos", async () => {
+    render(<ToDos />);
+    const text = await screen.findAllByText(/To do #/i);
+
+    expect(text.length).toEqual(200);
+  });
 });

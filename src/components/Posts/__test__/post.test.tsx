@@ -9,4 +9,10 @@ describe("Posts", () => {
 
     expect(text).toBeInTheDocument();
   });
+  test("should render 100 posts", async () => {
+    render(<Post />);
+    const text = await screen.findAllByText(/Post #/i);
+
+    expect(text.length).toEqual(100);
+  });
 });
