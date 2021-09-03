@@ -14,14 +14,14 @@ export default function ThemeSelector() {
           className={styles.checkbox}
         />
         <label htmlFor="checkbox" className={styles.label}>
-          <div className={styles.moon}>
-            <span role="img" aria-label="moon">
-              🌙
-            </span>
-          </div>
           <div className={styles.sun}>
             <span role="img" aria-label="sun">
               🌞
+            </span>
+          </div>
+          <div className={styles.moon}>
+            <span role="img" aria-label="moon">
+              🌙
             </span>
           </div>
           <div className={styles.ball}></div>

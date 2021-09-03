@@ -6,7 +6,7 @@ export default function Header() {
   return (
     <header className={styles.headerContainer}>
       <Link to="/">
-        <h1>{"{}"} JSON Placeholder</h1>
+        <h1>{"{JSON}"} Placeholder</h1>
       </Link>
       <ul>
         <li>

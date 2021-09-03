@@ -7,7 +7,7 @@ export default function Main() {
   const { darkTheme } = useTheme();
   return (
     <div className={styles.wrapper}>
-      <main className={darkTheme ? "light" : "dark"}>
+      <main className={darkTheme ? "dark" : "light"}>
         <Router />
       </main>
     </div>
